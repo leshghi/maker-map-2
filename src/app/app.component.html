@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="content" id="content">
+    <div class="bg">
+      
+      <div class="filter">
+        <div class="filter-format">
+        <button  class="filter-button" style="font-family:RobagaRoundedLight" [matMenuTriggerFor]="filter1">FILTER</button>
+            <mat-menu #filter1="matMenu" yPosition="above" >
+            <mat-list>
+              <div>
+                <mat-list-item >
+                  <mat-checkbox style="font-family:RobagaRoundedLight" value="access" [(ngModel)]="access.checked" (change)="finalFilter()" (click)="$event.stopPropagation()">
+                    All Campus Access
+                  </mat-checkbox>
+                </mat-list-item>
+                <mat-list-item>
+                  <mat-checkbox style="font-family:RobagaRoundedLight" value="open" [(ngModel)]="open.checked" (change)="hoursFilter()" (click)="$event.stopPropagation()">
+                    Open Now
+                  </mat-checkbox>
+                </mat-list-item>
+              </div>
+            </mat-list>
+            <button mat-menu-item style="font-family:RobagaRoundedLight" [matMenuTriggerFor]="makingResources">Resources</button>
+            <button mat-menu-item style="font-family:RobagaRoundedLight" (click)="resetFilter()">Reset</button>
+            </mat-menu>
+
+          <mat-menu #makingResources="matMenu" yPosition="above" xPosition="before">
+            <mat-list>
+                <div class="resourceFilters" *ngFor="let filter of allFilters">
+                  <mat-list-item>
+                <mat-checkbox style="font-family:RobagaRoundedLight" value=filter.name [(ngModel)]="filter.checked" (change)="finalFilter()"  (click)="$event.stopPropagation()" >
+                  {{filter.name | uppercase}}</mat-checkbox>
+                  </mat-list-item>
+              </div>
+            </mat-list>
+          </mat-menu>
+
+        </div>
+      </div>
+        
+      <div class="learn-more">
+          <div class="learn-more-card" (click)="openLearnMoreDialog()">
+          <img class="learn-image" src="assets/images/Misc/Learn more icon-01.png">
+        </div>
+      </div>
+
+      <div class="text-block">
+        <div  *ngFor="let location of filteredLocations">
+        <div class="example-card" (click)="openLocationDialog(location)">
+            <img class="main-image" src={{location.key}} alt={{location.name}} >
+        </div>
+        </div>
+      </div>
+      
+      <ng-container *ngFor="let location of filteredLocations">
+      <div class={{location.nameKey}} style="position:fixed">
+        <div class="dotExample" (click)="openLocationDialog(location)">
+        <img class="dot-image" src={{location.dot}}>
+      </div>
+    </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,270 @@
+body,
+html {
+  height: 100%;
+}
+
+
+
+::ng-deep .mat-list[dense] .mat-list-item .mat-line {
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+
+
+.bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* for IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* for Safari */
+
+  /* The image used */
+  background-image: url("src/assets/images/Map/Map WIP_LABELED_VER2-01.png");
+  /* Full height */
+  height: 100vh;
+  width:80vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  
+}
+
+.mat-menu-item{
+  line-height:35px;
+  height:35px;
+}
+
+
+.text-block {
+  position: fixed;
+  width: 25vh;
+  height: 37vh;
+  top: 55%;
+  left: 5%;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  overflow-y: scroll;
+}
+
+
+.main-image{
+  object-fit: fill; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 100%;
+  margin:0px;
+}
+
+.example-card {
+  width:100%;
+  max-width: 97%;
+  height: 10%;
+  max-height: 97%;
+  /* max-height:30px; */
+   box-sizing: border-box; 
+  margin-left: 1%;
+  margin-bottom: -4.1%; 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+mat-line{
+  word-break: break-all;
+  height: auto;
+}
+
+.popup{
+  position: absolute;
+  top:10%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-color:white;
+  color: white;
+}
+
+.close-icon{
+  right:0px;
+  margin:0px;
+  top:0px;
+}
+
+.mat-card-image{
+  width: 100%;
+}
+
+.mediaList .mat-list-item {
+  height: auto;
+}
+
+.sidebarList .mat-list-item {
+  height: min-content;
+}
+
+.content {
+  top:0px;
+  left:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.SMS{
+  top: 6%;
+  left: 49%;
+}
+
+.SAL{
+  top: 39.5%;
+  left: 48%;
+}
+
+.CDF{
+  top: 44%;
+  left: 52%;
+}
+
+.DTIS{
+  top: 6%;
+  left: 60.5%;
+}
+
+.CCJC{
+  top: 32%;
+  left: 54.5%;
+}
+
+.RR{
+  top:20.5%;
+  left:56%;
+}
+
+.TIC{
+  top:33.2%;
+  left:75.5%;
+}
+
+.TGL{
+  top:31.4%;
+  left:77.2%;
+}
+
+.THW{
+  top:32.5%;
+  left:79.8%;
+}
+
+.LSS{
+  top:37.9%;
+  left:50.2%;
+}
+
+.ES{
+  top:40.1%;
+  left:51%;
+}
+
+.MP{
+  top:53.6%;
+  left:63.1%;
+}
+
+.TSS{
+  top:55.5%;
+  left:57.3%;
+}
+
+.TCS{
+  top:53.5%;
+  left:56%;
+}
+
+.HAS{
+  top:31%;
+  left:74.5%;
+}
+
+.dotExample{
+  width:100%;
+  max-width: 97%;
+  height: 10%;
+  max-height: 97%;
+  /* max-height:30px; */
+  box-sizing: border-box; 
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dot-image{
+  object-fit: fill;
+  width: 2.8vh;
+  height: 2.8vh;
+  margin:0px;
+}
+
+.learn-more{
+  position: fixed;
+  top:93%;
+  left:45%;
+}
+
+.learn-more-card{
+  width:100%;
+  max-width: 97%;
+  height: 10%;
+  max-height: 97%;
+  /* max-height:30px; */
+   box-sizing: border-box; 
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.learn-image{
+  object-fit: fill;
+  width: 14.5vh;
+  height: 4vh;
+  margin:0px;
+}
+
+.filter{
+  position: fixed;
+  top: 51.5%;
+  left:5%;
+}
+
+.filter-format{
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box; 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+
+.filter-button{
+  object-fit: fill;
+  width: 8vh;
+  height: 3vh;
+  margin: 0px;
+  cursor: pointer;
+  font-size: 2vh;
+  padding: 1px 2px;
+  border-color: black;
+  text-align: center;
+}
+
+
+
+
+

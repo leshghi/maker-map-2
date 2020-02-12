@@ -1,0 +1,125 @@
+
+<div mat-dialog-content>
+        <mat-card-header>
+      <mat-card-title style="font-family:DaisyWheel">{{data.location.name}}
+      </mat-card-title>
+        </mat-card-header><mat-card-header>
+      <mat-card-subtitle style="font-family:DaisyWheel">{{data.location.location}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image class="mat-card-image" src={{data.location.image}} alt={{data.location.key}}>
+
+    <div *ngIf="data.location.name == 'Smith Media Studios'">
+        <mat-list dense>
+        <h3 matSubheader style="font-family:DaisyWheel">Locations</h3>
+
+        <mat-expansion-panel *ngFor="let mediaStudio of data.mediaStudios">
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-family:DaisyWheel">{{mediaStudio.name}}</mat-panel-title>
+            <mat-panel-description style="font-family:DaisyWheel">{{mediaStudio.location}}</mat-panel-description>
+          </mat-expansion-panel-header>
+          
+            
+    <mat-card-content>
+      <mat-list dense class="mediaList">
+        <h3 matSubheader style="font-family:DaisyWheel">Resources/Equipment</h3>
+        
+        <mat-list-item>
+          <h4 mat-line style="font-family:Odin-Bold" *ngFor="let resource of mediaStudio.resources">•{{resource}}
+          </h4>
+        </mat-list-item>
+      
+        <mat-divider></mat-divider>
+        
+        <h3 matSubheader style="font-family:DaisyWheel">Hours</h3>
+        <mat-list-item *ngIf="mediaStudio.hours.length != 0">
+          <h4 mat-line style="font-family:Odin-Bold">Monday : {{mediaStudio.hours[1]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Tuesday : {{mediaStudio.hours[2]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Wednesday : {{mediaStudio.hours[3]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Thursday : {{mediaStudio.hours[4]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Friday : {{mediaStudio.hours[5]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Saturday : {{mediaStudio.hours[6]}}</h4>
+          <h4 mat-line style="font-family:Odin-Bold">Sunday : {{mediaStudio.hours[0]}}</h4>
+        </mat-list-item>
+      <mat-list-item *ngIf="mediaStudio.hourNotes !== ''">   
+        <h4 style="font-family:Odin-Bold"> Hour notes: {{mediaStudio.hourNotes}}</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+        <h3 matSubheader style="font-family:DaisyWheel">Access Notes</h3>
+      <mat-list-item>   
+          <h4 style="font-family:Odin-Bold">{{mediaStudio.accessNotes}}</h4>
+        </mat-list-item>   
+        <h3 matSubheader style="font-family:DaisyWheel"> Contact</h3>
+      <mat-list-item>
+        <h4 style="font-family:Odin-Bold" *ngFor="let contact of mediaStudio.contact"> {{contact.name}}: <a href="mailto:contact?">{{contact.email}}</a></h4>
+      </mat-list-item>
+        
+      </mat-list>
+    
+    </mat-card-content>
+
+          
+        </mat-expansion-panel>
+  
+  
+  <h3 matSubheader style="font-family:DaisyWheel">Accessibility</h3>
+  <mat-list-item>  
+  <h4 style="font-family:Odin-Bold">{{data.location.accessibility}}</h4>
+</mat-list-item>  
+</mat-list> 
+</div>
+      <div *ngIf="data.location.name != 'Smith Media Studios'" class="tester">
+      <mat-card-content>
+        <mat-list dense class="sidebarList">
+          <h3 matSubheader style="font-family:DaisyWheel">Resources/Equipment</h3>
+          <mat-list-item>
+          <h4 mat-line style="font-family:Odin-Bold" *ngFor="let resource of data.location.resources">•{{resource}}
+          </h4>
+        </mat-list-item>
+          <mat-divider></mat-divider>
+          <h3 matSubheader style="font-family:DaisyWheel">Hours</h3>
+          
+          <mat-list-item *ngIf="data.location.hours.length !=0">
+            
+            <h4 mat-line style="font-family:Odin-Bold">Monday : {{data.location.hours[1]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Tuesday : {{data.location.hours[2]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Wednesday : {{data.location.hours[3]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Thursday : {{data.location.hours[4]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Friday : {{data.location.hours[5]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Saturday : {{data.location.hours[6]}}</h4>
+            <h4 mat-line style="font-family:Odin-Bold">Sunday : {{data.location.hours[0]}}</h4>
+          </mat-list-item>
+          <mat-list-item *ngIf="data.location.hours.length == 0">
+          <h4  style="font-family:Odin-Bold">
+            24/7 Access
+          </h4>
+        </mat-list-item>
+      <mat-list-item>
+          <h4 *ngIf="data.location.hourNotes !== ''" style="font-family:Odin-Bold"> Hour notes: {{data.location.hourNotes}}</h4>
+        </mat-list-item>
+            <mat-divider></mat-divider>
+          <h3 matSubheader style="font-family:DaisyWheel">Access Notes</h3>
+            <mat-list-item>
+            <h4 style="font-family:Odin-Bold">{{data.location.accessNotes}}</h4>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <h3 matSubheader style="font-family:DaisyWheel">Accessibility</h3>
+            <mat-list-item>
+            <h4 style="font-family:Odin-Bold">{{data.location.accessibility}}</h4>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <h3 matSubheader style="font-family:DaisyWheel"> Contact</h3>
+        <mat-list-item>
+          <h4 style="font-family:Odin-Bold" *ngFor="let contact of data.location.contact">{{contact.name}}: <a href="mailto:contact?">{{contact.email}}</a></h4>
+        </mat-list-item>
+          
+          
+        </mat-list>
+    
+
+        
+
+
+
+
+
