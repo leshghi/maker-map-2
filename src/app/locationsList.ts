@@ -1,23 +1,22 @@
-import { Location } from './location';
+import { Location } from './infoStructures';
 
 export const LOCATIONS: Location[] = [
   
-  {key: "assets/images/1-SMS/1_SMS-01.png",
-    name: "Smith Media Studios",
-    nameKey:"SMS",
-    resources: [],
-    filtResources: ["Software Support", "Computers", "Printing", "Whiteboard"],
-    hourNotes:"",
-    hours: ["12:00PM - 12:00AM", "8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 5:00PM", "10:00AM - 5:00PM"],
-    filtHours:["12:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-17:00","10:00-17:00"],
-    accessNotes: "Access may be restricted by occassional course workshops. Notices of scheduled workshops will be posted outside of lab",
-    access: true,
-    location: "Henshaw Unit D",
+  {key: "assets/images/1-SMS/1_SMS-01.png", /** This is the location of the image in the key */
+    name: "Smith Media Studios", /** This is the name of the location */
+    nameKey:"SMS", 
+    resources: [], /** Details on resources to go in popup window */
+    filtResources: ["Software Support", "Computers", "Printing", "Whiteboard"], /** Resources by filter type */
+    hourNotes:"", /** Any specific notes on availability (staffed hours/classes/etc) */
+    hours: ["12:00PM - 12:00AM", "8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 5:00PM", "10:00AM - 5:00PM"], /** Hours shown on the popup */
+    filtHours:["12:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-17:00","10:00-17:00"], /** Hours in 24 hour time used to filter */
+    accessNotes: "Access may be restricted by occassional course workshops. Notices of scheduled workshops will be posted outside of lab", /** Notes on access */
+    access: true, /** All campus access true/false */
+    location: "Henshaw Unit D", /** Location */
     accessibility: "1st floor spaces are wheelchair accessible",
-    image: "assets/images/1-SMS/picture.jpeg",
-    contact:[],
-    dot:"assets/images/1-SMS/1-01.png",
-    dotLocation:["10vh","10vh"]
+    image: "assets/images/1-SMS/picture.jpeg", /** Location of picture of space */
+    contact:[], /** Contact name and email */
+    dot:"assets/images/1-SMS/1-01.png", /** Location of dot image */
     },
 
     { key: "assets/images/2-Spatial Analysis Lab/2_SAL-01.png",
@@ -36,7 +35,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/2-Spatial Analysis Lab/picture.jpeg",
     contact:[{name:"Jon Caris", email:"jcaris@smith.edu"}],
     dot:"assets/images/2-Spatial Analysis Lab/2-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/3-CDF/3_CDF-01.png",
@@ -54,7 +52,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/3-CDF/picture.jpeg",
     contact:[{name:"Eric Jensen", email:"ejensen@smith.edu"},{name: "Dale Renfrow",email:"drenfrow@smith.edu"}],
     dot:"assets/images/3-CDF/3-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/4-DTI/4_DTI-01.png",
@@ -73,7 +70,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/4-DTI/picture.jpeg",
     contact:[{name: "Laura Lilienkamp",email:"llilienkamp@smith.edu"}],
     dot:"assets/images/4-DTI/4-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/5-JMM/5_creative_co_op-01.png",
@@ -91,7 +87,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/5-JMM/Jandon_1.jpg",
     contact:[{name:"Deborah Day",email:"dday@smith.edu"}],
     dot:"assets/images/5-JMM/5-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/6-Resource Room/6_resourcerm-01.png",
@@ -109,7 +104,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/6-Resource Room/picture.jpeg",
     contact:[{name:"Sara McGuire",email:"smcguire@smith.edu"}],
     dot:"assets/images/6-Resource Room/6-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/7-Imaging Center/7_imagingctr-01.png",
@@ -127,7 +121,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/7-Imaging Center/imaging center photo.jpg",
     contact:[{name: "Nick Baker", email:"ncbaker@smith.edu"}],
     dot:"assets/images/7-Imaging Center/7-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/8-Gaming Lab/8_gaminglab-01.png",
@@ -145,7 +138,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/8-Gaming Lab/picture.jpeg",
     contact:[{name: "Andrew Maurer",email:"ajmaurer@smith.edu"}],
     dot:"assets/images/8-Gaming Lab/8-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/9-Hilyer Woodshop/9_hwoodshop-01.png",
@@ -163,7 +155,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/9-Hilyer Woodshop/Woodshop_1.jpg",
     contact:[{name:"James Hume", email:"jhume@smith.edu"}],
     dot:"assets/images/9-Hilyer Woodshop/9-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
   { key: "assets/images/10-Landscape Studies Studio/10_lss-01.png",
@@ -181,7 +172,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/10-Landscape Studies Studio/picture.jpeg",
     contact:[{name:"Reid Bertone-Johnson",email:"rbertone@smith.edu"}],
     dot:"assets/images/10-Landscape Studies Studio/10-01.png",
-    dotLocation:["10vh","10vh"]
   },
     
     
@@ -200,7 +190,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/11-EGR Studio/picture.jpeg",
     contact:[{name:"Sue Froehlich", email:"sfroehli@smith.edu"}],
     dot:"assets/images/11-EGR Studio/11-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/12-Mechanics Playground/12_mechanics playground-01.png",
@@ -218,7 +207,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/12-Mechanics Playground/picture.jpeg",
     contact:[{name:"Sue Froehlich", email:"sfroehli@smith.edu"}],
     dot:"assets/images/12-Mechanics Playground/12-01.png",
-    dotLocation:["10vh","10vh"]
     },
     
     {key: "assets/images/13-Theater Scene Shop/13_theater_scene-01.png",
@@ -236,7 +224,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/13-Theater Scene Shop/theater set shop photo.JPG",
     contact:[{name:"Daniel D. Rist", email:"drist@smith.edu"},{name:"Alan Schneider",email:"awschneider@smith.edu"}],
     dot:"assets/images/13-Theater Scene Shop/13-01.png",
-    dotLocation:["10vh","10vh"]
     },
 
     {key: "assets/images/14-Costume Shop/14_costume shop-01.png",
@@ -254,7 +241,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/14-Costume Shop/CostumeShop_2.jpg",
     contact:[{name:"Emily Dunn", email:"edunn2@smith.edu"}],
     dot:"assets/images/14-Costume Shop/14-01.png",
-    dotLocation:["10vh","10vh"]
     },
     
     {key: "assets/images/15-Hillyer Art Studios/15_hilyer studios-01.png",
@@ -272,7 +258,6 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/15-Hillyer Art Studios/HilyerClassroom_1.jpg",
     contact:[{name:"Fraser Stables", email:"fstables@smith.edu"}],
     dot:"assets/images/15-Hillyer Art Studios/15-01.png",
-    dotLocation:["10vh","10vh"]
     }
     
 ];

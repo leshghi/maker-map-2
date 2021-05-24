@@ -1,4 +1,4 @@
-import { Location } from './location';
+import { Location } from './infoStructures';
 
 export const MEDIASTUDIOS: Location[] = [
     {key: "assets/images/1-SMS/1 sms-01.jpeg",
@@ -16,7 +16,6 @@ export const MEDIASTUDIOS: Location[] = [
     image: "assets/images/1-SMS/picture.jpeg",
     contact:[{name:"Yasmin Eisenhaue", email:"yeisenhauer@smith.edu"}],
     dot:"",
-    dotLocation:[]
     },
 
     {key: "assets/images/1-SMS/1 sms-01.jpeg",
@@ -36,7 +35,6 @@ export const MEDIASTUDIOS: Location[] = [
     image: "assets/images/1-SMS/picture.jpeg",
     contact:[{name:"Jeff Heath",email:"jheath@smith.edu"}],
     dot:"",
-    dotLocation:[]
     },
     {key: "assets/images/1-SMS/1 sms-01.jpeg",
     name: "Media Duplication",
@@ -54,7 +52,6 @@ export const MEDIASTUDIOS: Location[] = [
     image: "assets/images/1-SMS/picture.jpeg",
     contact:[{name:"Sandy Bynceski",email:"sbycenski@smith.edu"}],
     dot:"",
-    dotLocation:[]
     },
     {key: "assets/images/1-SMS/1 sms-01.jpeg",
     name: "Audio Booth",
@@ -71,7 +68,6 @@ export const MEDIASTUDIOS: Location[] = [
     image: "assets/images/1-SMS/picture.jpeg",
     contact:[{name:"Yasmin Eisenhaue", email:"yeisenhauer@smith.edu"}],
     dot:"",
-    dotLocation:[]
     },
     {key: "assets/images/1-SMS/1 sms-01.jpeg",
     name: "Equipment Loan",
@@ -90,7 +86,6 @@ export const MEDIASTUDIOS: Location[] = [
     image: "assets/images/1-SMS/picture.jpeg",
     contact:[{name:"Sandy Bynceski",email:"sbycenski@smith.edu"}],
     dot:"",
-    dotLocation:[]
     },
     
 ]

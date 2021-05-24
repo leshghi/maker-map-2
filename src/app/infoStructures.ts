@@ -1,4 +1,10 @@
-import { Contact } from './contact';
+/** Contains the structures for data/information about the locations */
+class Contact {
+    constructor(
+        public name: string,
+        public email: string,
+    ) {}
+}
 
 export class Location {
     constructor(
@@ -16,7 +22,6 @@ export class Location {
       public image: string,
       public contact: Contact[],
       public dot: string,
-      public dotLocation: string[],
       public nameKey:string
       ) { }
   }

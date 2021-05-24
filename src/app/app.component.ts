@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import {Location} from './location';
+import {Location} from './infoStructures';
 import {LOCATIONS} from './locationsList';
 import {MEDIASTUDIOS} from './smithMediaStudiosList';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.showPopup(LOCATIONS[0]);
-    this.closePopup();
   }
   
 
@@ -28,25 +27,22 @@ export class AppComponent implements OnInit {
   locations = LOCATIONS;
   filteredLocations = LOCATIONS;
   selectedLocation: Location;
+  // Filters for the filter menu
   allFilters=[{name: "Lasercutter", checked: false},{name: "3D printer", checked: false}, {name:"Other fabrication tools", checked: false},
   {name: "Arts and craft supplies", checked: false},{name: "Software support", checked: false},
   {name: "Computers", checked: false},{name: "Printing", checked: false},
   {name: "Whiteboard", checked: false}];
   access={name: "All Campus Access Only", checked:false};
 
-  title = 'website-v1';
+  title = 'Smith Makers Map';
   show: boolean = false;
   constructor(public dialog: MatDialog) {}
 
   showPopup(location: Location){
     this.selectedLocation = location;
-  
   }
 
-  closePopup(){
-   
-  }
-
+  // Handles filters for various locations
   finalFilter(){
     this.filteredLocations=LOCATIONS;
     if(this.access.checked == true){
@@ -73,6 +69,7 @@ export class AppComponent implements OnInit {
   }
   }
 
+  // Logic for filtering by hours for "open now"
   hoursFilterHelper(){
     var registerDate = new Date();
     var day = registerDate.getDay();
@@ -98,6 +95,7 @@ export class AppComponent implements OnInit {
     });
   }
 
+  // Clear all filters
   resetFilter(){
     this.filteredLocations=LOCATIONS;
     this.allFilters.forEach(element =>{
@@ -110,38 +108,21 @@ export class AppComponent implements OnInit {
     this.access.checked = false;
   }
 
-  animal: string;
-  name: string;
-
   openLocationDialog(location: Location): void {
-    const dialogRef = this.dialog.open(LocationDialog, {
+    this.dialog.open(LocationDialog, {
       width: '60%',
       maxWidth: "400px",
       autoFocus: false,
       data: {location: location, mediaStudios: this.mediaStudios}
     });
-
-   
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-
 }
 
 openLearnMoreDialog(): void {
-  const dialogRef = this.dialog.open(LearnMoreDialog, {
+  this.dialog.open(LearnMoreDialog, {
     width: '60%',
     maxWidth: "400px",
     autoFocus: false,
   });
-
-  
-
-  dialogRef.afterClosed().subscribe(result => {
-    console.log('The dialog was closed');
-  });
-
 }
 }
 
@@ -154,7 +135,7 @@ export class LocationDialog {
 
   constructor(
     public dialogRef: MatDialogRef<AppComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Location) {}
+    @Inject(MAT_DIALOG_DATA) public data: {location: Location, mediaStudios: Location[]}) {}
 
   onNoClick(): void {
     this.dialogRef.close();
