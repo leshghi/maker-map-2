@@ -16,13 +16,13 @@ Get the Github repository on your computer (You can skip parts 1 and 2 if you al
 
 3. Sign in with your account, and follow the instructions [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) to get the Makers Map repostory at link: https://github.com/leshghi/maker-map-2
 
-![cloning respository example](README_Images/cloning_menu.png) 
+<img src="README_Images/cloning_menu.png" width=100px height=100px>
 
-![cloning respository example 2](README_Images/cloning.png) 
+<img src="README_Images/cloning.png" width=100px height=100px> 
 
 4. Make a new branch and open the code in the editor of your choice (I recommend [VSCode](https://code.visualstudio.com/))
 
-![new branch example](README_Images/new_branch.png =100x)
+<img src="README_Images/new_branch.png" width=100px height=100px> 
 
 5. If you do not already have it - download node following the instructions [here](https://nodejs.org/en/download/)
 
@@ -37,16 +37,18 @@ Make sure to check your changes by running `ng serve` in your terminal from the 
 <p> Once you are happy with your changes, it is time to upload them to github so that everyone can access the most recent version of the code! Here is how to do that on GitHub Desktop </p>
 
 First, commit all your changes on the branch you created and push to the origin. Only the files with the blue check mark will be committed.
-![commiting on github](README_Images/commiting.png) 
+<img src="README_Images/commiting.png" width=100px height=100px>  
 
-![pushing to origin](README_Images/pushing.png)
+Now, push your changes to the origin
+<img src="README_Images/pushing.png" width=100px height=100px> 
 
-Now, switch to the master branch and merge in your branch 
-![switching branches](README_Images/switching_branches.png) 
+Switch to the master branch 
+<img src="README_Images/switching_branches.png" width=100px height=100px> 
 
-![merging 1](/README_Images/merging1.png)
+Now, merge in your branch to the master branch
+<img src="/README_Images/merging1.png" width=100px height=100px> 
 
-![merging 2](README_Images/merging2.png)
+<img src="README_Images/merging2.png" width=100px height=100px> 
 
 Push your changes to the origin one last time and you should be all set! You can check by going to the online github repository and making sure you see your updates
 
@@ -55,7 +57,7 @@ Push your changes to the origin one last time and you should be all set! You can
 
 Follow the instructions [here](https://www.c-sharpcorner.com/blogs/how-to-publish-an-angular-application) to upload the website to Bluehost. You can use the host www.smithmakersmap.com and FTP user "smithmak" to connect to the bluehost server for upload. All other information  (password, etc) you should already have. See [here](https://www.bluehost.com/hosting/help/ftpaccounts) for more details working with Bluehost and FTPs.
 
-![filezilla](/README_Images/filezilla.png)
+<img src="/README_Images/filezilla.png" width=100px height=100px> 
 
 Another option is to go to Advanced Settings>Files>File Manager. There you will find all files used for your website. From there, you can drag and drop the files from inside your created dist folder into the public_html folder shown in File Manager. Make sure to delete old copies of the files to make sure only the new ones are used!
 
