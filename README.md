@@ -12,9 +12,11 @@ To update the app follow these steps:
 <li> Get the Github repository on your computer (You can skip parts 1 and 2 if you already are set up)</li>
 <ol>
 <li>If you do not have a github account, you will have to make one at https://www.github.com</li>
-<li>Download Github Desktop at https://desktop.github.com/. Sign in with your account, and follow the instructions here (https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) to get the Makers Map repostory at link (https://github.com/leshghi/maker-map-2) ![cloning respository example](README_Images/cloning_menu.png) ![cloning respository example 2](README_Images/cloning.png) </li>
-<li>Make a new branch and open the code in the editor of your choice (I recommend VSCode: https://code.visualstudio.com/) ![new branch example](README_Images/new_branch.png)
+<li>Download Github Desktop at https://desktop.github.com/. Sign in with your account, and follow the instructions here (https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) to get the Makers Map repostory at link (https://github.com/leshghi/maker-map-2) </li>
+![cloning respository example](README_Images/cloning_menu.png) ![cloning respository example 2](README_Images/cloning.png) 
+<li>Make a new branch and open the code in the editor of your choice (I recommend VSCode: https://code.visualstudio.com/) 
 </li>
+![new branch example](README_Images/new_branch.png)
 </ol>
 <li>If you do not already have it - download node following the instructions here (https://nodejs.org/en/download/)</li>
 </ol>
@@ -29,8 +31,10 @@ To update the app follow these steps:
 ### Pushing your chages to github
 <p> Once you are happy with your changes, it is time to upload them to github so that everyone can access the most recent version of the code! Here is how to do that on GitHub Desktop </p>
 <ol>
-<li>First, commit all your changes on the branch you created and push to the origin. Only the files with the blue check mark will be committed. ![commiting on github](README_Images/commiting.png) ![pushing to origin](README_Images/pushing.png)</li>
-<li>Now, switch to the master branch and merge in your branch ![switching branches](README_Images/switching_branches.png) ![merging 1](/README_Images/merging1.png)![merging 2](README_Images/merging2.png)</li>
+<li>First, commit all your changes on the branch you created and push to the origin. Only the files with the blue check mark will be committed. </li>
+![commiting on github](README_Images/commiting.png) ![pushing to origin](README_Images/pushing.png)
+<li>Now, switch to the master branch and merge in your branch </li>
+![switching branches](README_Images/switching_branches.png) ![merging 1](/README_Images/merging1.png)![merging 2](README_Images/merging2.png)
 <li>Push your changes to the origin one last time and you should be all set! You can check by going to the online github repository and making sure you see your updates</li>
 </ol>
 
