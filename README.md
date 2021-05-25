@@ -45,9 +45,7 @@ Now, push your changes to the origin
 Switch to the master branch 
 <img src="README_Images/switching_branches.png" height=450px> 
 
-Now, merge in your branch to the master branch
-<img src="/README_Images/merging1.png" height=450px> 
-
+Now, merge in your branch to the master branch 
 <img src="README_Images/merging2.png" height=450px> 
 
 Push your changes to the origin one last time and you should be all set! You can check by going to the online github repository and making sure you see your updates
@@ -59,6 +57,12 @@ Follow the instructions [here](https://www.c-sharpcorner.com/blogs/how-to-publis
 
 <img src="/README_Images/filezilla.png" height=450px> 
 
-Another option is to go to Advanced Settings>Files>File Manager. There you will find all files used for your website. From there, you can drag and drop the files from inside your created dist folder into the public_html folder shown in File Manager. Make sure to delete old copies of the files to make sure only the new ones are used!
+Another option is to go to Advanced Settings>Files>File Manager. There you will find all files used for your website. 
+
+<img src="/README_Images/filemanager.png" height=350px> 
+
+From there, you can drag and drop the files from inside your created dist folder into the public_html folder shown in File Manager.Make sure to delete old copies of the files to make sure only the new ones are used!
+
+<img src="/README_Images/uploading.png" height=350px> 
 
 
