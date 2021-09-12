@@ -2,21 +2,21 @@ import { Location } from './infoStructures';
 
 export const LOCATIONS: Location[] = [
   
-  {key: "assets/images/1-SMS/1_SMS-01.png", /** This is the location of the image in the key */
-    name: "Smith Media Studios", /** This is the name of the location */
-    nameKey:"SMS", 
-    resources: [], /** Details on resources to go in popup window */
-    filtResources: ["Software Support", "Computers", "Printing", "Whiteboard"], /** Resources by filter type */
-    hourNotes:"", /** Any specific notes on availability (staffed hours/classes/etc) */
-    hours: ["12:00PM - 12:00AM", "8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 12:00AM","8:00AM - 5:00PM", "10:00AM - 5:00PM"], /** Hours shown on the popup */
-    filtHours:["12:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-24:00","8:00-17:00","10:00-17:00"], /** Hours in 24 hour time used to filter */
-    accessNotes: "Access may be restricted by occassional course workshops. Notices of scheduled workshops will be posted outside of lab", /** Notes on access */
+  {key: "assets/images/1-CC/1_CC-01.png", /** This is the location of the image in the key */
+    name: "Conway Center", /** This is the name of the location */
+    nameKey:"CC", 
+    resources: ["Prototyping supplies", "Poster-making supplies", "Arts & crafts supplies"], /** Details on resources to go in popup window */
+    filtResources: ["Arts and crafts supplies"], /** Resources by filter type */
+    hourNotes: "Open and accessible when the library is open, swipe card access may be required. Hours subject to change during breaks.", /** Any specific notes on availability (staffed hours/classes/etc) */
+    hours: [], /** Hours shown on the popup */
+    filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"], /** Hours in 24 hour time used to filter */
+    accessNotes: "Available when Neilson Library is open", /** Notes on access */
     access: true, /** All campus access true/false */
     location: "Henshaw Unit D", /** Location */
-    accessibility: "1st floor spaces are wheelchair accessible",
-    image: "assets/images/1-SMS/picture.jpeg", /** Location of picture of space */
-    contact:[], /** Contact name and email */
-    dot:"assets/images/1-SMS/1-01.png", /** Location of dot image */
+    accessibility: "Wheelchair accessible",
+    image: "assets/images/1-CC/picture.jpeg", /** Location of picture of space */
+    contact:[{name:"CIEC", email:"ciec@smith.edu "}], /** Contact name and email */
+    dot:"assets/images/1-CC/1-01.png", /** Location of dot image */
     },
 
     { key: "assets/images/2-Spatial Analysis Lab/2_SAL-01.png",
@@ -46,7 +46,7 @@ export const LOCATIONS: Location[] = [
     hours: ["Closed", "8:30AM - 4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","Closed"],
     filtHours:["24:00-0:00","8:30-16:30","8:30-16:30","8:30-16:30","8:30-16:30","8:30-16:30","24:00-0:00"],
     access: true,
-    accessNotes: "Staff Support required",
+    accessNotes: "Schedule an Appointment at https://tinyurl.com/y49evypk",
     location: "McConnell B07/B09",
     accessibility: "Wheelchair accessible. Elevator.",
     image: "assets/images/3-CDF/picture.jpeg",
@@ -60,20 +60,20 @@ export const LOCATIONS: Location[] = [
     resources: ["Vinyl cutter", "3D printer", "Laser cutter", "Craft supplies", "Sewing machine and hand tools!"],
     filtResources: ["Lasercutter","3D printer","Other fabrication tools", "Arts and crafts supplies",
   "Computers", "Whiteboard"],
-    hours: ["1:00PM - 4:00PM", "9:00AM - 5:00PM, 6:30PM - 9:30PM","9:00AM - 5:00PM, 6:30PM - 9:30PM","9:00AM - 5:00PM, 6:30PM - 9:30PM","9:00AM - 5:00PM, 6:30PM - 9:30PM", "9:00AM - 5:00PM", "1:00PM - 4:00PM"],
-    hourNotes:"Hours subject to change, check http://smithiesdesign.com/prototyping-in-capen-annex/ for updates.",
-    filtHours:["13:00-16:00","9:00-17:00","9:00-17:00","9:00-17:00","9:00-17:00","9:00-17:00","13:00-16:00"],
+    hourNotes: "Check https://www.smith.edu/academics/design-thinking/studio for hours",
+    hours: [],
+    filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"],
     access: true,
     accessNotes: "Accessible 9-5 without staff support; after hours access for students with lasercutting training",
     location: "Capen Annex Room 203",
     accessibility: "Not wheelchair accessible. Please contact llilienkamp@smith.edu if you are interested in using equipment and we can work to make appropriate acomodations.",
     image: "assets/images/4-DTI/picture.jpeg",
-    contact:[{name: "Laura Lilienkamp",email:"llilienkamp@smith.edu"}],
+    contact:[{name: "Capen Annex",email:"capenannex@smith.edu"}],
     dot:"assets/images/4-DTI/4-01.png",
     },
 
     {key: "assets/images/5-JMM/5_creative_co_op-01.png",
-    name: "Creative Co-op at Jandon Center",
+    name: "Creative Co-op at Jandon",
     nameKey:"CCJC",
     resources: ["Support but not limited to our Crafting for Community STEAM Outreach Initiative"],
     filtResources: ["Arts and craft supplies"],
@@ -102,20 +102,20 @@ export const LOCATIONS: Location[] = [
     location: "Campus Center Room 203",
     accessibility: "Wheelchair accessible via elevator",
     image: "assets/images/6-Resource Room/picture.jpeg",
-    contact:[{name:"Sara McGuire",email:"smcguire@smith.edu"}],
+    contact:[{name:"OSE",email:"ose@smith.edu"}],
     dot:"assets/images/6-Resource Room/6-01.png",
     },
 
     {key: "assets/images/7-Imaging Center/7_imagingctr-01.png",
     name: "The Imaging Center",
     nameKey:"TIC",
-    resources: ["3D printer", "Large paper cutter", "Adobe Suite and 3D editing software", "iMac computers", "Large format printer.", "Contact staff for 3D scanning and poster printing support."],
+    resources: ["3D printers", "Large paper cutter", "Adobe Suite and 3D editing software", "iMac computers", "Large format printers", "Contact staff for 3D scanning and poster printing support."],
     filtResources: ["3D printer", "Software support", "Computers", "Printing", "Whiteboard"],
     hourNotes:"No use during lectures",
     hours: ["Closed","8:30AM -4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","8:30AM - 4:30PM","Closed"],
     filtHours:["24:00-0:00","8:30-16:30","8:30-16:30","8:30-16:30","8:30-16:30","8:30-16:30","24:00-0:00"],
     access: true,
-    accessNotes: "24/7 keycard access for Art History students, open to others 8:30 to 4:30 M-F",
+    accessNotes: "Open to students enrolled in Art Department courses.",
     location: "Hillyer H324",
     accessibility: "Wheelchair accessible",
     image: "assets/images/7-Imaging Center/imaging center photo.jpg",
@@ -129,10 +129,10 @@ export const LOCATIONS: Location[] = [
     resources: ["Gaming equipment includes:", "3 gaming PCs", "Arcade cabinet", "HTC Vive", "Oculus Rift", "Playstation VR", "2 PS4s", "Xbox One", "PS3", "XBox 360", "Nintendo Switch", "Game library"],
     filtResources: ["Computers"],
     hourNotes:"Occasionally reserved for class projects",
-    hours: ["Closed","3:00PM - 6:00PM","3:00PM - 6:00PM","Closed","3:00PM - 8:00PM","6:00PM - 10:00PM","Closed"],
-    filtHours:["24:00-0:00","15:00-18:00","15:00-18:00","24:00-0:00","15:00-20:00","18:00-22:00","24:00-0:00"],
+    hours: [],
+    filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"],
     access: true,
-    accessNotes: "Open to entire campus during posted Open Hours (check Facebook page for current semester hours: https://www.facebook.com/gaminglabatsmithcollege/). Accessible 24/7 by students enrolled in gaming-related classes (via door keycode). Also open via appointment.",
+    accessNotes: "Check the Facebook page for current semester hours: https://www.facebook.com/gaminglabatsmithcollege/",
     location: "Hillyer H326",
     accessibility: "Wheelchair accessible via elevator",
     image: "assets/images/8-Gaming Lab/picture.jpeg",
@@ -145,28 +145,28 @@ export const LOCATIONS: Location[] = [
     nameKey:"THW",
     resources: ["Woodworking"],
     filtResources: ["Woodworking"],
-    hourNotes:"When Jim is available",
-    hours: ["Closed", "9:00AM - 4:00PM","9:00AM - 4:00PM","9:00AM - 4:00PM","9:00AM - 4:00PM","9:00AM - 4:00PM","Closed"],
-    filtHours:["24:00-0:00","9:00-16:00","9:00-16:00","9:00-16:00","9:00-16:00","9:00-16:00","24:00-0:00"],
+    hourNotes:"When Drew is available",
+    hours: ["Closed", "Closed","8:00AM - 5:00PM","8:00AM - 5:00PM","Closed","8:00AM - 5:00PM","Closed"],
+    filtHours:["24:00-0:00","24:00-0:00","8:00-17:00","8:00-17:00","24:00-0:00","8:00-17:00","24:00-0:00"],
     access: true,
-    accessNotes: "Available to drop-in when Jim Hume is in the woodshop",
+    accessNotes: "Available to drop-in when Drew Palmore is in the Woodshop",
     location: "Hillyer Basement",
     accessibility: "Wheelchair accessible",
     image: "assets/images/9-Hilyer Woodshop/Woodshop_1.jpg",
-    contact:[{name:"James Hume", email:"jhume@smith.edu"}],
+    contact:[{name:"Drew Palmore", email:"apalmore@smith.edu"}],
     dot:"assets/images/9-Hilyer Woodshop/9-01.png",
     },
 
   { key: "assets/images/10-Landscape Studies Studio/10_lss-01.png",
     name: "Landscape Studies Studio",
     nameKey:"LSS",
-    resources: ["10 Windows machines", "Spiral binding machine", "Large format printer", "Low fidelity model building tools and supplies", "Trace paper", "Milk crates"],
+    resources: ["10 Windows machines", "Spiral binding machine", "Large format printer", "Low fidelity model building tools and supplies", "Tracing paper", "Milk crates"],
     filtResources: ["Other fabrication tools", "Arts and craft supplies", "Software support", "Computers", "Printing", "Whiteboard"],
     hourNotes:"OneCard Accessible 24/7",
     hours: [],
     filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"],
     access: false,
-    accessNotes: "Limited to students enrolled in a LSS class - subject to change",
+    accessNotes: "Access to space is only upon request",
     location: "Burton Room 406",
     accessibility: "Wheelchair accessible via Sabin-Burton elevator",
     image: "assets/images/10-Landscape Studies Studio/picture.jpeg",
@@ -212,11 +212,11 @@ export const LOCATIONS: Location[] = [
     {key: "assets/images/13-Theater Scene Shop/13_theater_scene-01.png",
     name: "Theatre Scene Shop",
     nameKey:"TSS",
-    resources: ["Wood-shop and scene-shop tools", "Painting supplies", "Cloth-dying", "Hand tools", "Table saw", "Drill press", "Spray booth", "etc"],
+    resources: ["Wood-shop and scene-shop tools", "Painting supplies", "Cloth-dying", "Hand tools", "Table saw", "Drill press", "Spray booth", "Upholstery equipment and supplies", "etc"],
     filtResources: ["Woodworking"],
     hourNotes:"Accesssible per request",
-    hours: ["Closed", "8:00AM - 4:00PM","8:00AM - 4:00PM","8:00AM - 4:00PM","8:00AM - 4:00PM","8:00AM - 4:00PM","Closed"],
-    filtHours:["24:00-0:00","8:00-16:00","8:00-16:00","8:00-16:00","8:00-16:00","8:00-16:00","24:00-0:00"],
+    hours: ["Closed", "10:00AM - 5:00PM","10:00AM - 5:00PM","10:00AM - 5:00PM","10:00AM - 5:00PM","10:00AM - 5:00PM","Closed"],
+    filtHours:["24:00-0:00","10:00-17:00","10:00-17:00","10:00-17:00","10:00-17:00","10:00-17:00","24:00-0:00"],
     access: false,
     accessNotes: "Available by appointment.",
     location: "Mendenhall [behind the stage]",
@@ -256,7 +256,7 @@ export const LOCATIONS: Location[] = [
     location: "Hillyer Art Building",
     accessibility: "Wheelchair accessible",
     image: "assets/images/15-Hillyer Art Studios/HilyerClassroom_1.jpg",
-    contact:[{name:"Fraser Stables", email:"fstables@smith.edu"}],
+    contact:[{name:"Lindsey Clark-Ryan", email:"lclarkry@smith.edu"}],
     dot:"assets/images/15-Hillyer Art Studios/15-01.png",
     }
     
