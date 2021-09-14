@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import {Location} from './infoStructures';
 import {LOCATIONS} from './locationsList';
-import {MEDIASTUDIOS} from './smithMediaStudiosList';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 
@@ -23,7 +22,6 @@ export class AppComponent implements OnInit {
   open={checked:false};
   selected: string;
   date: string;
-  mediaStudios=MEDIASTUDIOS;
   locations = LOCATIONS;
   filteredLocations = LOCATIONS;
   selectedLocation: Location;
@@ -113,7 +111,7 @@ export class AppComponent implements OnInit {
       width: '60%',
       maxWidth: "400px",
       autoFocus: false,
-      data: {location: location, mediaStudios: this.mediaStudios}
+      data: {location: location}
     });
 }
 

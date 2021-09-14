@@ -2,7 +2,7 @@ import { Location } from './infoStructures';
 
 export const LOCATIONS: Location[] = [
   
-  {key: "assets/images/1-CC/1_CC-01.png", /** This is the location of the image in the key */
+  {key: "assets/images/1-CC/conway_center.png", /** This is the location of the image in the key */
     name: "Conway Center", /** This is the name of the location */
     nameKey:"CC", 
     resources: ["Prototyping supplies", "Poster-making supplies", "Arts & crafts supplies"], /** Details on resources to go in popup window */
@@ -12,9 +12,9 @@ export const LOCATIONS: Location[] = [
     filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"], /** Hours in 24 hour time used to filter */
     accessNotes: "Available when Neilson Library is open", /** Notes on access */
     access: true, /** All campus access true/false */
-    location: "Henshaw Unit D", /** Location */
+    location: "Inside Neilson Library", /** Location */
     accessibility: "Wheelchair accessible",
-    image: "assets/images/1-CC/picture.jpeg", /** Location of picture of space */
+    image: "assets/images/1-CC/picture.jpg", /** Location of picture of space */
     contact:[{name:"CIEC", email:"ciec@smith.edu "}], /** Contact name and email */
     dot:"assets/images/1-CC/1-01.png", /** Location of dot image */
     },
