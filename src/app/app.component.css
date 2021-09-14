@@ -21,7 +21,7 @@ html {
   -webkit-transform: translate(-50%, -50%); /* for Safari */
 
   /* The image used */
-  background-image: url("src/assets/images/Map/Maker's map front.png");
+  background-image: url("src/assets/images/Map/MakersMap.png");
   /* Full height */
   height: 100vh;
   width:80vh;
@@ -42,7 +42,7 @@ html {
 .text-block {
   position: fixed;
   width: 25vh;
-  height: 35vh;
+  height: 37vh;
   top: 55%;
   left: 5%;
   /* padding-left: 20px;
@@ -115,8 +115,8 @@ mat-line{
 }
 
 .CC{
-  top: 35%;
-  left: 63%;
+  top: 37.5%;
+  left: 64%;
 }
 
 .SAL{
@@ -212,8 +212,8 @@ mat-line{
 
 .learn-more{
   position: fixed;
-  top:93%;
-  left:45%;
+  top:96.2%;
+  left:41%;
 }
 
 .learn-more-card{
