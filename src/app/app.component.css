@@ -4,7 +4,6 @@ html {
 }
 
 
-
 ::ng-deep .mat-list[dense] .mat-list-item .mat-line {
   word-wrap: normal;
   white-space: pre-wrap;
