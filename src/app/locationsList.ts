@@ -66,7 +66,7 @@ export const LOCATIONS: Location[] = [
     access: true,
     accessNotes: "Accessible 9-5 without staff support; after hours access for students with lasercutting training",
     location: "Capen Annex Room 203",
-    accessibility: "Not wheelchair accessible. Please contact llilienkamp@smith.edu if you are interested in using equipment and we can work to make appropriate acomodations.",
+    accessibility: "While the Downstairs prototyping studio is wheelchair accessible, the upstairs prototyping studio is not. Please contact us if you need to arrange for appropriate accommodations.",
     image: "assets/images/4-DTI/picture.jpeg",
     contact:[{name: "Capen Annex",email:"capenannex@smith.edu"}],
     dot:"assets/images/4-DTI/4-01.png",
