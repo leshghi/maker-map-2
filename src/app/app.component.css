@@ -105,6 +105,10 @@ mat-line{
   height: min-content;
 }
 
+.mat-expansion-panel-header {
+  padding: 0px 16px;
+}
+
 .content {
   top:0px;
   left:0px;
@@ -186,6 +190,11 @@ mat-line{
 .HAS{
   top:31%;
   left:74.5%;
+}
+
+.SMS{
+  top:41.5%;
+  left:61%;
 }
 
 .dotExample{
