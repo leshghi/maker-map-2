@@ -275,6 +275,23 @@ export const LOCATIONS: Location[] = [
     image: "assets/images/16-Smith Media Studios/SmithMediaStudios-1.jpg",
     contact:[{name:"Dan Bennett", email:" dbennett@smith.edu"}],
     dot:"assets/images/16-Smith Media Studios/16-01.png",
+    },
+
+    {key: "assets/images/17-Digital Music Lab/17_digital music lab-01.png",
+    name: "Digital Media Lab",
+    nameKey:"DML",
+    resources: ["13 workstations with MIDI keyboards", "Computers whose software includes Reaper and Audacity (digital audio workstations)", "Sibelius and Musescore (music notation software)", "Max/MSP"],
+    filtResources: ["Software Support", "Computers"],
+    hours: [],
+    hourNotes:"Anytime with card swipe access (see below)",
+    filtHours:["0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00","0:00-24:00"],
+    access:  true,
+    accessNotes: "Students enrolled in a music course that uses the DML, or any student (or other) who writes to me and Anna to gain access.",
+    location: "Sage Hall room 315",
+    accessibility: "Accessible via elevator to the 3rd floor.",
+    image: "assets/images/17-Digital Music Lab/DigitalMusicLab-1.jpg",
+    contact:[{name:"Anna Goudreau", email:"agoudreau@smith.edu"}, {name:"Kate Soper", email:"ksoper@smith.edu"}],
+    dot:"assets/images/17-Digital Music Lab/17-01.png",
     }
     
 ];

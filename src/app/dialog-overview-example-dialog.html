@@ -16,6 +16,7 @@
           <h4 mat-line style="font-family:Odin-Bold" *ngFor="let resource of data.location.resources">•{{resource}}
           </h4>
         </mat-list-item>
+        <br>
           <mat-divider></mat-divider>
           <h3 matSubheader style="font-family:DaisyWheel">Hours</h3>
           
@@ -34,14 +35,14 @@
             24/7 Access
           </h4>
         </mat-list-item>
-      <mat-list-item>
+        <mat-list-item>
           <h4 *ngIf="data.location.hourNotes !== ''" style="font-family:Odin-Bold"> Hour notes: {{data.location.hourNotes}}</h4>
         </mat-list-item>
-            <mat-divider></mat-divider>
+        <mat-divider></mat-divider>
           <h3 matSubheader style="font-family:DaisyWheel">Access Notes</h3>
-            <mat-list-item>
-            <h4 style="font-family:Odin-Bold">{{data.location.accessNotes}}</h4>
-          </mat-list-item>
+          <mat-list-item>
+          <h4 style="font-family:Odin-Bold">{{data.location.accessNotes}}</h4>
+        </mat-list-item>
           <mat-divider></mat-divider>
           <h3 matSubheader style="font-family:DaisyWheel">Accessibility</h3>
             <mat-list-item>
@@ -72,6 +73,7 @@
               </mat-expansion-panel-header>
           
               <p>
+                <img class="mat-card-image" src={{mediaStudio.image}} alt={{mediaStudio.key}}>
                 <mat-list dense class="mediaList">
                   <h3 matSubheader style="font-family:DaisyWheel">Resources/Equipment</h3>
                   
@@ -108,8 +110,8 @@
                 24/7 Access
               </h4>
             </mat-list-item>  
-            <mat-list-item *ngIf="data.location.hourNotes !== ''">   
-              <h4 style="font-family:Odin-Bold"> Hour notes: {{data.location.hourNotes}}</h4>
+            <mat-list-item>
+              <h4 *ngIf="data.location.hourNotes !== ''" style="font-family:Odin-Bold"> Hour notes: {{data.location.hourNotes}}</h4>
             </mat-list-item>
             <mat-divider></mat-divider>
             <h3 matSubheader style="font-family:DaisyWheel">Accessibility</h3>

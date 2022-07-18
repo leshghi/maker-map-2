@@ -1,7 +1,7 @@
 import { Location } from './infoStructures';
 
 export const MEDIASTUDIOS: Location[] = [ /** location list speially for Smith Media Studios accordion content*/
-    {key: "assets/images/16-SMS/16_smith media studios-01.jpeg",
+    {key: "assets/images/16-SMS/16_smith media studios-01.png",
     name: "Digital Media Hub",
     nameKey: "",
     resources: ["iMacs and PCs with full Adobe Creative Cloud & GIS Software suite", "012A Self Service Studio with Audio Recording Setup for voice over or podcasting", "012A Also includes studio lighting, black backdrop and green screen for video recording", "Access and reservations for use of studio spaces is the same as for equipment (see above)"],
@@ -13,12 +13,12 @@ export const MEDIASTUDIOS: Location[] = [ /** location list speially for Smith M
     access: true,
     location: "Neilson Library Level G",
     accessibility: "",
-    image: "assets/images/6-SMS/16-SmithMediaStudios-2.jpg",
+    image: "assets/images/16-Smith Media Studios/SmithMediaStudios-3.jpg",
     contact:[{name:"Dan Bennett", email:" dbennett@smith.edu"}],
     dot:"assets/images/16-Smith Media Studios/16-01.png",
     },
 
-    {key: "assets/images/16-SMS/16_smith media studios-01.jpeg",
+    {key: "assets/images/16-SMS/16_smith media studios-01.png",
     name: "Equipment Loan",
     nameKey: "",
     resources: ["Canon Vixia G20 Camcorders", "Canon 80D DSLRs", "Rode VideoMics", "LED light boxes","Zoom H4N and H6 Portable Audio Recorders", "18'' Ring Lights",
@@ -31,12 +31,12 @@ export const MEDIASTUDIOS: Location[] = [ /** location list speially for Smith M
     access: true,
     location: "Neilson Central Service Point",
     accessibility: "",
-    image: "assets/images/16-SMS/16-SmithMediaStudios-3.jpeg",
+    image: "assets/images/16-Smith Media Studios/SmithMediaStudios-2.jpg",
     contact:[{name:"Dan Bennett", email:" dbennett@smith.edu"}],
     dot:"assets/images/16-Smith Media Studios/16-01.png",
     },
 
-    {key: "assets/images/16-SMS/16_smith media studios-01.jpeg",
+    {key: "assets/images/16-SMS/16_smith media studios-01.png",
     name: "Knowledge Lab",
     nameKey: "",
     resources: ["27 iMacs with secondary monitors and full Adobe Creative Cloud"],
@@ -48,7 +48,7 @@ export const MEDIASTUDIOS: Location[] = [ /** location list speially for Smith M
     access: true,
     location: "Alumnae Gymnasium 202",
     accessibility: "",
-    image: "assets/images/16-SMS/16-SmithMediaStudios-4.jpeg",
+    image: "assets/images/16-Smith Media Studios/SmithMediaStudios-4.jpg",
     contact:[{name:"Dan Bennett", email:" dbennett@smith.edu"}],
     dot:"assets/images/16-Smith Media Studios/16-01.png",
     },

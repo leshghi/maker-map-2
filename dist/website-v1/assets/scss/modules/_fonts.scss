@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Odin-Bold';
+    src: url('/assets/fonts/robaga-rounded/Odin-Bold.eot');
+    src: 
+    url('/assets/fonts/OdinBold/Odin-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/OdinBold/Odin-Bold.svg#DaisyWheel') format('svg'),
+         url('/assets/fonts/OdinBold/Odin-Bold.ttf') format('truetype'),
+         url('/assets/fonts/OdinBold/Odin-Bold.woff') format('woff'),
+         url('/assets/fonts/OdinBold/Odin-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DaisyWheel';
+    src: url('/assets/fonts/robaga-rounded/DaisyWheel.eot');
+    src: url('/assets/fonts/DaisyWheel/DaisyWheel.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/DaisyWheel/DaisyWheel.svg#DaisyWheel') format('svg'),
+         url('/assets/fonts/DaisyWheel/DaisyWheel.ttf') format('truetype'),
+         url('/assets/fonts/DaisyWheel/DaisyWheel.woff') format('woff'),
+         url('/assets/fonts/DaisyWheel/DaisyWheel.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+     font-family: 'RobagaRoundedLight';
+     src: url('/assets/fonts/robaga-rounded/RobagaRoundedLight.eot');
+     src: url('/assets/fonts/robaga-rounded/RobagaRoundedLight.eot?#iefix') format('embedded-opentype'),
+          url('/assets/fonts/robaga-rounded/RobagaRoundedLight.svg#RobagaRoundedLight') format('svg'),
+          url('/assets/fonts/robaga-rounded/RobagaRoundedLight.ttf') format('truetype'),
+          url('/assets/fonts/robaga-rounded/RobagaRoundedLight.woff') format('woff'),
+          url('/assets/fonts/robaga-rounded/RobagaRoundedLight.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;
+   }
