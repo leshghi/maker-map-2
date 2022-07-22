@@ -41,7 +41,7 @@ html {
 .text-block {
   position: fixed;
   width: 25vh;
-  height: 37vh;
+  height: 36vh;
   top: 55%;
   left: 5%;
   /* padding-left: 20px;
@@ -128,18 +128,18 @@ mat-line{
 }
 
 .CDF{
-  top: 44%;
-  left: 52%;
+  top: 43%;
+  left: 51%;
 }
 
 .DTIS{
-  top: 6%;
+  top: 6.5%;
   left: 60.5%;
 }
 
 .CCJC{
   top: 32%;
-  left: 54.5%;
+  left: 55%;
 }
 
 .RR{
@@ -194,12 +194,12 @@ mat-line{
 
 .SMS{
   top:41.5%;
-  left:61%;
+  left:61.5%;
 }
 
 .DML{
   top:57%;
-  left:48.5%;
+  left:49.5%;
 }
 
 .dotExample{
@@ -225,7 +225,7 @@ mat-line{
 
 .learn-more{
   position: fixed;
-  top:96.2%;
+  top: 93%;
   left:41%;
 }
 
